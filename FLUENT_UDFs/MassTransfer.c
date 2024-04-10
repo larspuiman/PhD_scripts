@@ -59,8 +59,8 @@ DEFINE_MASS_TRANSFER(CO_gas_liquid_MT,cell,thread,from_index,from_species_index,
 	a = 6 * eG / d_b;                   /* 1/m */
 
 /* Calculating MT Coefficient using corrected LS relation*/
-    double Pmin = 506.7;                  /* Minimum power input W/m3, Roels Heijnen 1980 */
-    double Ptot = Pmin * 565;           /* Total power input W */
+    double Pmin = 506.7;                  	/* Minimum power input W/m3, Roels Heijnen 1980 */
+    double Ptot = Pmin * 565;           	/* Total power input W, liquid-based working volume is 565 m3 */
 
     if(SWITCH_EPS_CORR == 0)
         {f_cor = 1.0;}
